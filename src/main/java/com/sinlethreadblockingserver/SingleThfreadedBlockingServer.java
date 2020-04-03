@@ -12,6 +12,7 @@ public class SingleThfreadedBlockingServer {
     ServerSocket lServerSocket = new ServerSocket(8081);
     while(true)
     {
+      ///Number
       Socket ss = lServerSocket.accept();
       System.out.println("Connected to: "+ss);
       InputStream lInputStream = ss.getInputStream();
